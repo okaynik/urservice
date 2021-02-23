@@ -13,4 +13,4 @@ class Class(models.Model):
     mba = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.title
+        return self.title_string
