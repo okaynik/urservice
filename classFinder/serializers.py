@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Course
+from .models import ClassSections
 
-class CourseSerializer(serializers.ModelSerializer):
+class ClassSectionsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Course
-        fields = ('meeting_times', 'title_string', 'crn', 'school_abbrv', 'level',
-                    'num_units', 'num_credits', 'notes', 'passfail', 'mba')
+        model = ClassSections
+        fields = ('id', 'class_name', 'crn', 'school', 'level',
+            'num_units','num_credits','note','passfail','mba')

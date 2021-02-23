@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import CourseSerializer
-from .models import Course
+from .serializers import ClassSectionsSerializer
+from .models import ClassSections
 
 # Create your views here.
 
-class CourseView(viewsets.ModelViewSet):
-    serializer_class = CourseSerializer
-    queryset = Course.objects.all()
+class ClassSectionsView(viewsets.ModelViewSet):
+    serializer_class = ClassSectionsSerializer
+    queryset = ClassSections.objects.all()

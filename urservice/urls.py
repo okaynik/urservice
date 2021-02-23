@@ -19,7 +19,7 @@ from rest_framework import routers
 from classFinder import views
 
 router = routers.DefaultRouter()
-router.register(r'courses', views.CourseView, 'course')
+router.register(r'classSections', views.ClassSectionsView, 'classSection')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
