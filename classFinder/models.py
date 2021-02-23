@@ -1,6 +1,6 @@
 from django.db import models
 
-class Class(models.Model):
+class Course(models.Model):
     meeting_times = models.CharField(max_length=120)
     title_string = models.CharField(max_length=120)
     crn = models.CharField(max_length=120)
